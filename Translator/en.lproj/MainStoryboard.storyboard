@@ -1,26 +1,201 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" promptedForUpgradeToXcode5="NO" initialViewController="6iA-so-cO3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="LJm-Nm-KPd">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="6iA-so-cO3" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="4bJ-4t-iqS">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="a4V-JK-fsU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jeL-tm-Ayn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-548" y="-23"/>
+        </scene>
+        <!--Worst Translator EU-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="TRViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KXA-H0-Eed"/>
+                        <viewControllerLayoutGuide type="bottom" id="wof-Fx-7U1"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PA9-3w-Kyb">
+                                <rect key="frame" x="20" y="72" width="62" height="32"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <state key="normal" title="From">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="iAC-VL-FW9" kind="push" identifier="from" id="jcd-VC-fx0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ErJ-QC-hf3">
+                                <rect key="frame" x="238" y="72" width="62" height="32"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <state key="normal" title="To">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="iAC-VL-FW9" kind="push" identifier="to" id="CMU-al-of3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFg-Wd-bfL">
+                                <rect key="frame" x="129" y="72" width="62" height="32"/>
+                                <state key="normal" title="&lt; -- &gt;">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="switchLanguages:" destination="2" eventType="touchUpInside" id="eDu-Ge-8Zy"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="41a-KM-Tbp">
+                                <rect key="frame" x="16" y="112" width="280" height="62"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="go"/>
+                            </textView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="y1t-w6-IE4">
+                                <rect key="frame" x="0.0" y="182" width="320" height="298"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="Cell" id="fm8-jh-hnk" customClass="TRTranslationTableViewCell">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fm8-jh-hnk" id="FEV-yO-sk6">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="From Language" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bKr-nU-aF9">
+                                                    <rect key="frame" x="0.0" y="1" width="136" height="23"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="136" id="cYT-UY-ndV"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="To Language" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fXQ-Tc-OhT">
+                                                    <rect key="frame" x="184" y="3" width="136" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="136" id="1iJ-23-6U2"/>
+                                                        <constraint firstAttribute="height" constant="21" id="Pnm-5j-jyq"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfg-K9-9NP">
+                                                    <rect key="frame" x="184" y="20" width="95" height="23"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="95" id="xGn-Zl-nhl"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                                    <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKO-y0-ehx">
+                                                    <rect key="frame" x="41" y="20" width="95" height="23"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="95" id="UTP-A0-wOu"/>
+                                                        <constraint firstAttribute="height" constant="23" id="coZ-x1-vww"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                                    <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <constraints>
+                                            <constraint firstItem="yKO-y0-ehx" firstAttribute="trailing" secondItem="bKr-nU-aF9" secondAttribute="trailing" id="BXU-PQ-WQq"/>
+                                            <constraint firstItem="fXQ-Tc-OhT" firstAttribute="trailing" secondItem="fm8-jh-hnk" secondAttribute="trailing" id="NRu-vX-pBo"/>
+                                            <constraint firstItem="yKO-y0-ehx" firstAttribute="top" secondItem="fm8-jh-hnk" secondAttribute="top" constant="20" id="QKj-GA-0oB"/>
+                                            <constraint firstItem="fXQ-Tc-OhT" firstAttribute="baseline" secondItem="bKr-nU-aF9" secondAttribute="baseline" id="awZ-Pw-hof"/>
+                                            <constraint firstItem="jfg-K9-9NP" firstAttribute="baseline" secondItem="yKO-y0-ehx" secondAttribute="baseline" id="cJI-qW-GjE"/>
+                                            <constraint firstItem="bKr-nU-aF9" firstAttribute="top" secondItem="fm8-jh-hnk" secondAttribute="top" constant="1" id="gnC-mP-Rci"/>
+                                            <constraint firstItem="jfg-K9-9NP" firstAttribute="leading" secondItem="fXQ-Tc-OhT" secondAttribute="leading" id="ilI-fI-IeL"/>
+                                            <constraint firstItem="bKr-nU-aF9" firstAttribute="leading" secondItem="fm8-jh-hnk" secondAttribute="leading" id="ofU-yq-pyn"/>
+                                            <constraint firstItem="jfg-K9-9NP" firstAttribute="top" secondItem="fm8-jh-hnk" secondAttribute="top" constant="20" id="vqX-uy-fqI"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="fromLabelLanguage" destination="yKO-y0-ehx" id="IfF-oV-E5V"/>
+                                            <outlet property="fromLabelText" destination="bKr-nU-aF9" id="5cW-Gz-5Fd"/>
+                                            <outlet property="toLabelLanguage" destination="jfg-K9-9NP" id="9JS-CC-Yo3"/>
+                                            <outlet property="toLabelText" destination="fXQ-Tc-OhT" id="a9o-CV-mUb"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="J9a-oB-sVD">
+                                <rect key="frame" x="284" y="182" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Worst Translator EU" id="KRr-Z3-J8M"/>
+                    <connections>
+                        <outlet property="fromLanguageButton" destination="PA9-3w-Kyb" id="4l7-U8-lth"/>
+                        <outlet property="inputTextView" destination="41a-KM-Tbp" id="JZq-nf-5x1"/>
+                        <outlet property="outputTableView" destination="y1t-w6-IE4" id="KYT-iq-Hge"/>
+                        <outlet property="spinner" destination="J9a-oB-sVD" id="G3G-sW-jo8"/>
+                        <outlet property="switchLanguagesButton" destination="MFg-Wd-bfL" id="Aie-pB-1Jl"/>
+                        <outlet property="toLanguageButton" destination="ErJ-QC-hf3" id="pki-Tp-CtN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-10" y="-23"/>
+        </scene>
+        <!--Language Selection Table View Controller-->
+        <scene sceneID="952-qb-pYo">
+            <objects>
+                <tableViewController id="iAC-VL-FW9" customClass="TRLanguageSelectionTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="j5m-W7-m9A">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="Mtv-Hu-wfh">
+                                <rect key="frame" x="0.0" y="46" width="320" height="46"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mtv-Hu-wfh" id="rva-05-XPa">
+                                    <rect key="frame" x="10" y="1" width="298" height="41"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="iAC-VL-FW9" id="NaD-PZ-qDH"/>
+                            <outlet property="delegate" destination="iAC-VL-FW9" id="Rqr-7M-OIM"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="EXd-ur-l8p"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0CE-bA-Fn8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="404" y="-23"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="CMU-al-of3"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92BAA4EF175E8B2800E2F424 /* TRDetailTranslationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92BAA4ED175E8B2800E2F424 /* TRDetailTranslationViewController.m */; };
+		92BAA4F0175E8B2800E2F424 /* TRDetailTranslationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92BAA4EE175E8B2800E2F424 /* TRDetailTranslationViewController.xib */; };
+		92BAA4F2175E8DBC00E2F424 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92BAA4F1175E8DBC00E2F424 /* QuartzCore.framework */; };
 		92BDE223175E4FD6001D4034 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92BDE222175E4FD6001D4034 /* UIKit.framework */; };
 		92BDE225175E4FD6001D4034 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92BDE224175E4FD6001D4034 /* Foundation.framework */; };
 		92BDE227175E4FD6001D4034 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92BDE226175E4FD6001D4034 /* CoreGraphics.framework */; };
@@ -23,6 +26,16 @@
 		92BDE249175E4FD7001D4034 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92BDE224175E4FD6001D4034 /* Foundation.framework */; };
 		92BDE251175E4FD7001D4034 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92BDE24F175E4FD7001D4034 /* InfoPlist.strings */; };
 		92BDE254175E4FD7001D4034 /* TranslatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92BDE253175E4FD7001D4034 /* TranslatorTests.m */; };
+		92BDE261175E5010001D4034 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92BDE260175E5010001D4034 /* CoreData.framework */; };
+		92BDE266175E53CE001D4034 /* translator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 92BDE264175E53CE001D4034 /* translator.xcdatamodeld */; };
+		92BDE269175E54F4001D4034 /* Languages.m in Sources */ = {isa = PBXBuildFile; fileRef = 92BDE268175E54F4001D4034 /* Languages.m */; };
+		92BDE26D175E552A001D4034 /* LanguageFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 92BDE26C175E552A001D4034 /* LanguageFactory.m */; };
+		92BDE270175E5647001D4034 /* TRCoreDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 92BDE26F175E5647001D4034 /* TRCoreDataObject.m */; };
+		92BDE273175E583E001D4034 /* TRLanguagesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92BDE272175E583E001D4034 /* TRLanguagesModel.m */; };
+		92BDE276175E5B11001D4034 /* TRLanguageSelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92BDE275175E5B11001D4034 /* TRLanguageSelectionTableViewController.m */; };
+		92BDE279175E6DB1001D4034 /* Translation.m in Sources */ = {isa = PBXBuildFile; fileRef = 92BDE278175E6DB1001D4034 /* Translation.m */; };
+		92BDE27C175E6E99001D4034 /* TRTranslationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92BDE27B175E6E99001D4034 /* TRTranslationModel.m */; };
+		92BDE27F175E806E001D4034 /* TRTranslationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92BDE27E175E806E001D4034 /* TRTranslationTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +49,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		92BAA4EC175E8B2800E2F424 /* TRDetailTranslationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TRDetailTranslationViewController.h; path = Translator/TRDetailTranslationViewController.h; sourceTree = "<group>"; };
+		92BAA4ED175E8B2800E2F424 /* TRDetailTranslationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TRDetailTranslationViewController.m; path = Translator/TRDetailTranslationViewController.m; sourceTree = "<group>"; };
+		92BAA4EE175E8B2800E2F424 /* TRDetailTranslationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TRDetailTranslationViewController.xib; path = Translator/TRDetailTranslationViewController.xib; sourceTree = "<group>"; };
+		92BAA4F1175E8DBC00E2F424 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		92BDE21F175E4FD6001D4034 /* Translator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Translator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92BDE222175E4FD6001D4034 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		92BDE224175E4FD6001D4034 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -50,14 +67,33 @@
 		92BDE236175E4FD6001D4034 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		92BDE238175E4FD7001D4034 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		92BDE23B175E4FD7001D4034 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		92BDE23D175E4FD7001D4034 /* TRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRViewController.h; sourceTree = "<group>"; };
-		92BDE23E175E4FD7001D4034 /* TRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRViewController.m; sourceTree = "<group>"; };
+		92BDE23D175E4FD7001D4034 /* TRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TRViewController.h; path = Translator/TRViewController.h; sourceTree = "<group>"; };
+		92BDE23E175E4FD7001D4034 /* TRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TRViewController.m; path = Translator/TRViewController.m; sourceTree = "<group>"; };
 		92BDE245175E4FD7001D4034 /* TranslatorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TranslatorTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92BDE246175E4FD7001D4034 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		92BDE24E175E4FD7001D4034 /* TranslatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TranslatorTests-Info.plist"; sourceTree = "<group>"; };
 		92BDE250175E4FD7001D4034 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		92BDE252175E4FD7001D4034 /* TranslatorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TranslatorTests.h; sourceTree = "<group>"; };
 		92BDE253175E4FD7001D4034 /* TranslatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TranslatorTests.m; sourceTree = "<group>"; };
+		92BDE260175E5010001D4034 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		92BDE262175E503F001D4034 /* Types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Types.h; path = supportingfiles/Types.h; sourceTree = "<group>"; };
+		92BDE265175E53CE001D4034 /* translator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = translator.xcdatamodel; sourceTree = "<group>"; };
+		92BDE267175E54F4001D4034 /* Languages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Languages.h; path = Translator/supportingfiles/repository/Languages.h; sourceTree = "<group>"; };
+		92BDE268175E54F4001D4034 /* Languages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Languages.m; path = Translator/supportingfiles/repository/Languages.m; sourceTree = "<group>"; };
+		92BDE26B175E552A001D4034 /* LanguageFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LanguageFactory.h; path = Translator/supportingfiles/LanguageFactory.h; sourceTree = "<group>"; };
+		92BDE26C175E552A001D4034 /* LanguageFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LanguageFactory.m; path = Translator/supportingfiles/LanguageFactory.m; sourceTree = "<group>"; };
+		92BDE26E175E5647001D4034 /* TRCoreDataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TRCoreDataObject.h; path = Translator/TRCoreDataObject.h; sourceTree = "<group>"; };
+		92BDE26F175E5647001D4034 /* TRCoreDataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TRCoreDataObject.m; path = Translator/TRCoreDataObject.m; sourceTree = "<group>"; };
+		92BDE271175E583E001D4034 /* TRLanguagesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TRLanguagesModel.h; path = Translator/TRLanguagesModel.h; sourceTree = "<group>"; };
+		92BDE272175E583E001D4034 /* TRLanguagesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TRLanguagesModel.m; path = Translator/TRLanguagesModel.m; sourceTree = "<group>"; };
+		92BDE274175E5B11001D4034 /* TRLanguageSelectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TRLanguageSelectionTableViewController.h; path = Translator/TRLanguageSelectionTableViewController.h; sourceTree = "<group>"; };
+		92BDE275175E5B11001D4034 /* TRLanguageSelectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TRLanguageSelectionTableViewController.m; path = Translator/TRLanguageSelectionTableViewController.m; sourceTree = "<group>"; };
+		92BDE277175E6DB1001D4034 /* Translation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Translation.h; path = Translator/supportingfiles/repository/Translation.h; sourceTree = "<group>"; };
+		92BDE278175E6DB1001D4034 /* Translation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Translation.m; path = Translator/supportingfiles/repository/Translation.m; sourceTree = "<group>"; };
+		92BDE27A175E6E99001D4034 /* TRTranslationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TRTranslationModel.h; path = Translator/TRTranslationModel.h; sourceTree = "<group>"; };
+		92BDE27B175E6E99001D4034 /* TRTranslationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TRTranslationModel.m; path = Translator/TRTranslationModel.m; sourceTree = "<group>"; };
+		92BDE27D175E806E001D4034 /* TRTranslationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TRTranslationTableViewCell.h; path = Translator/TRTranslationTableViewCell.h; sourceTree = "<group>"; };
+		92BDE27E175E806E001D4034 /* TRTranslationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TRTranslationTableViewCell.m; path = Translator/TRTranslationTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +101,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92BAA4F2175E8DBC00E2F424 /* QuartzCore.framework in Frameworks */,
+				92BDE261175E5010001D4034 /* CoreData.framework in Frameworks */,
 				92BDE223175E4FD6001D4034 /* UIKit.framework in Frameworks */,
 				92BDE225175E4FD6001D4034 /* Foundation.framework in Frameworks */,
 				92BDE227175E4FD6001D4034 /* CoreGraphics.framework in Frameworks */,
@@ -87,6 +125,10 @@
 		92BDE216175E4FD6001D4034 = {
 			isa = PBXGroup;
 			children = (
+				92BDE263175E5382001D4034 /* Core */,
+				92BDE25F175E4FF3001D4034 /* Model */,
+				92BDE25E175E4FEA001D4034 /* View */,
+				92BDE25D175E4FE0001D4034 /* UI */,
 				92BDE228175E4FD6001D4034 /* Translator */,
 				92BDE24C175E4FD7001D4034 /* TranslatorTests */,
 				92BDE221175E4FD6001D4034 /* Frameworks */,
@@ -106,6 +148,8 @@
 		92BDE221175E4FD6001D4034 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				92BAA4F1175E8DBC00E2F424 /* QuartzCore.framework */,
+				92BDE260175E5010001D4034 /* CoreData.framework */,
 				92BDE222175E4FD6001D4034 /* UIKit.framework */,
 				92BDE224175E4FD6001D4034 /* Foundation.framework */,
 				92BDE226175E4FD6001D4034 /* CoreGraphics.framework */,
@@ -119,9 +163,6 @@
 			children = (
 				92BDE231175E4FD6001D4034 /* TRAppDelegate.h */,
 				92BDE232175E4FD6001D4034 /* TRAppDelegate.m */,
-				92BDE23A175E4FD7001D4034 /* MainStoryboard.storyboard */,
-				92BDE23D175E4FD7001D4034 /* TRViewController.h */,
-				92BDE23E175E4FD7001D4034 /* TRViewController.m */,
 				92BDE229175E4FD6001D4034 /* Supporting Files */,
 			);
 			path = Translator;
@@ -131,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				92BDE22A175E4FD6001D4034 /* Translator-Info.plist */,
+				92BDE262175E503F001D4034 /* Types.h */,
 				92BDE22B175E4FD6001D4034 /* InfoPlist.strings */,
 				92BDE22E175E4FD6001D4034 /* main.m */,
 				92BDE230175E4FD6001D4034 /* Translator-Prefix.pch */,
@@ -158,6 +200,65 @@
 				92BDE24F175E4FD7001D4034 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		92BDE25D175E4FE0001D4034 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				92BDE23A175E4FD7001D4034 /* MainStoryboard.storyboard */,
+				92BAA4EE175E8B2800E2F424 /* TRDetailTranslationViewController.xib */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		92BDE25E175E4FEA001D4034 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				92BDE23D175E4FD7001D4034 /* TRViewController.h */,
+				92BDE23E175E4FD7001D4034 /* TRViewController.m */,
+				92BDE274175E5B11001D4034 /* TRLanguageSelectionTableViewController.h */,
+				92BDE275175E5B11001D4034 /* TRLanguageSelectionTableViewController.m */,
+				92BDE27D175E806E001D4034 /* TRTranslationTableViewCell.h */,
+				92BDE27E175E806E001D4034 /* TRTranslationTableViewCell.m */,
+				92BAA4EC175E8B2800E2F424 /* TRDetailTranslationViewController.h */,
+				92BAA4ED175E8B2800E2F424 /* TRDetailTranslationViewController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		92BDE25F175E4FF3001D4034 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				92BDE271175E583E001D4034 /* TRLanguagesModel.h */,
+				92BDE272175E583E001D4034 /* TRLanguagesModel.m */,
+				92BDE27A175E6E99001D4034 /* TRTranslationModel.h */,
+				92BDE27B175E6E99001D4034 /* TRTranslationModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		92BDE263175E5382001D4034 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				92BDE26A175E550A001D4034 /* Helper */,
+				92BDE264175E53CE001D4034 /* translator.xcdatamodeld */,
+				92BDE277175E6DB1001D4034 /* Translation.h */,
+				92BDE278175E6DB1001D4034 /* Translation.m */,
+				92BDE267175E54F4001D4034 /* Languages.h */,
+				92BDE268175E54F4001D4034 /* Languages.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		92BDE26A175E550A001D4034 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				92BDE26B175E552A001D4034 /* LanguageFactory.h */,
+				92BDE26C175E552A001D4034 /* LanguageFactory.m */,
+				92BDE26E175E5647001D4034 /* TRCoreDataObject.h */,
+				92BDE26F175E5647001D4034 /* TRCoreDataObject.m */,
+			);
+			name = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +338,7 @@
 				92BDE237175E4FD6001D4034 /* Default@2x.png in Resources */,
 				92BDE239175E4FD7001D4034 /* Default-568h@2x.png in Resources */,
 				92BDE23C175E4FD7001D4034 /* MainStoryboard.storyboard in Resources */,
+				92BAA4F0175E8B2800E2F424 /* TRDetailTranslationViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +376,16 @@
 				92BDE22F175E4FD6001D4034 /* main.m in Sources */,
 				92BDE233175E4FD6001D4034 /* TRAppDelegate.m in Sources */,
 				92BDE23F175E4FD7001D4034 /* TRViewController.m in Sources */,
+				92BDE266175E53CE001D4034 /* translator.xcdatamodeld in Sources */,
+				92BDE269175E54F4001D4034 /* Languages.m in Sources */,
+				92BDE26D175E552A001D4034 /* LanguageFactory.m in Sources */,
+				92BDE270175E5647001D4034 /* TRCoreDataObject.m in Sources */,
+				92BDE273175E583E001D4034 /* TRLanguagesModel.m in Sources */,
+				92BDE276175E5B11001D4034 /* TRLanguageSelectionTableViewController.m in Sources */,
+				92BDE279175E6DB1001D4034 /* Translation.m in Sources */,
+				92BDE27C175E6E99001D4034 /* TRTranslationModel.m in Sources */,
+				92BDE27F175E806E001D4034 /* TRTranslationTableViewCell.m in Sources */,
+				92BAA4EF175E8B2800E2F424 /* TRDetailTranslationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +422,7 @@
 				92BDE23B175E4FD7001D4034 /* en */,
 			);
 			name = MainStoryboard.storyboard;
+			path = Translator;
 			sourceTree = "<group>";
 		};
 		92BDE24F175E4FD7001D4034 /* InfoPlist.strings */ = {
@@ -454,6 +567,7 @@
 				92BDE259175E4FD7001D4034 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		92BDE25A175E4FD7001D4034 /* Build configuration list for PBXNativeTarget "TranslatorTests" */ = {
 			isa = XCConfigurationList;
@@ -462,8 +576,23 @@
 				92BDE25C175E4FD7001D4034 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		92BDE264175E53CE001D4034 /* translator.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				92BDE265175E53CE001D4034 /* translator.xcdatamodel */,
+			);
+			currentVersion = 92BDE265175E53CE001D4034 /* translator.xcdatamodel */;
+			name = translator.xcdatamodeld;
+			path = Translator/supportingfiles/translator.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 92BDE217175E4FD6001D4034 /* Project object */;
 }
